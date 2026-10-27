@@ -1,21 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" role="img" aria-label="Harrison's Auto Repair">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 260" role="img" aria-label="Harrison's Auto Repair">
   <defs>
     <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#F7F3EA"/>
       <stop offset="1" stop-color="#EDE7DA"/>
     </linearGradient>
   </defs>
-  <ellipse cx="210" cy="120" rx="204" ry="114" fill="#B23E51"/>
-  <ellipse cx="210" cy="118" rx="190" ry="101" fill="url(#face)" stroke="#26242B" stroke-width="3"/>
-  <!-- faint car outline, drawn from the sign's sketched coupe -->
-  <g fill="none" stroke="#26242B" stroke-width="3" opacity=".28" stroke-linecap="round">
-    <path d="M96 138 q4 -22 30 -26 l34 -4 q26 2 40 18 l30 4"/>
-    <path d="M92 138 q-2 10 8 12 M204 138 q4 10 14 8"/>
-    <circle cx="120" cy="146" r="7"/>
-    <circle cx="186" cy="148" r="7"/>
+  <ellipse cx="230" cy="130" rx="218" ry="122" fill="#B23E51"/>
+  <ellipse cx="230" cy="128" rx="203" ry="108" fill="url(#face)" stroke="#26242B" stroke-width="3"/>
+  <g fill="none" stroke="#26242B" stroke-width="3" opacity=".22" stroke-linecap="round">
+    <path d="M116 148 q4 -22 30 -26 l34 -4 q26 2 40 18 l30 4"/>
+    <path d="M112 148 q-2 10 8 12 M224 148 q4 10 14 8"/>
+    <circle cx="140" cy="156" r="7"/>
+    <circle cx="206" cy="158" r="7"/>
   </g>
-  <text x="214" y="104" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="58" fill="#B23E51" stroke="#26242B" stroke-width="2.5" paint-order="stroke" letter-spacing="1">HARRISON<tspan font-size="40" dy="-6">'s</tspan></text>
-  <text x="214" y="140" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="30" fill="#26242B" letter-spacing="2">AUTO REPAIR</text>
-  <text x="214" y="176" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="30" fill="#B23E51" letter-spacing="1">801-420-0305</text>
-  <text x="214" y="198" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#26242B" letter-spacing="1">136 Malvern Ave.</text>
+  <text x="218" y="112" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="54" fill="#B23E51" stroke="#26242B" stroke-width="2.5" paint-order="stroke" textLength="280" lengthAdjust="spacingAndGlyphs">HARRISON</text>
+  <text x="368" y="112" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="36" fill="#B23E51" stroke="#26242B" stroke-width="2" paint-order="stroke">'s</text>
+  <text x="230" y="148" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="27" fill="#26242B" textLength="250" lengthAdjust="spacingAndGlyphs">AUTO REPAIR</text>
+  <text x="230" y="182" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="27" fill="#B23E51" textLength="230" lengthAdjust="spacingAndGlyphs">801-420-0305</text>
+  <text x="230" y="204" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#26242B" textLength="150" lengthAdjust="spacingAndGlyphs">136 Malvern Ave.</text>
 </svg>
