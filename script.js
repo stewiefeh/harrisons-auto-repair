@@ -17,10 +17,9 @@ ready();
   const rows = document.querySelectorAll('#hours li');
   if (!dot) return;
   const now = new Date();
-  const fmt = new Intl.DateTimeFormat('en-US', {timeZone:'America/Denver', hour:'numeric', minute:'numeric', hour12:true});
   const parts = new Intl.DateTimeFormat('en-US', {timeZone:'America/Denver', weekday:'short', hour:'numeric', hour12:false, hourCycle:'h23'}).formatToParts(now);
   const get = t => parts.find(p => p.type === t)?.value;
-  const day = new Map({Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}).get(get('weekday'));
+  const day = {Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[get('weekday')];
   const hour = +get('hour'), weekday = day >= 1 && day <= 5;
   const open = weekday && hour >= 9 && hour < 17;
   if (open){
