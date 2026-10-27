@@ -35,3 +35,19 @@ ready();
   const todayRow = document.querySelector('#hours li[data-day="' + day + '"]');
   if (todayRow) todayRow.classList.add('today');
 })();
+
+/* scroll-spy: mark the section currently in view */
+(function(){
+  const links = Array.from(document.querySelectorAll('.nav a'));
+  if (!links.length || !('IntersectionObserver' in window)) return;
+  const byId = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(a => a.removeAttribute('aria-current'));
+      const link = byId.get(e.target.id);
+      if (link) link.setAttribute('aria-current', 'true');
+    });
+  }, {rootMargin: '-35% 0px -55% 0px'});
+  byId.forEach((link, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
+})();
