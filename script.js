@@ -5,7 +5,7 @@ function ready(){ requestAnimationFrame(() => {
   document.body.classList.add('ready');
   if (door && !prefersReduced){
     door.classList.add('open');
-    setTimeout(() => door.classList.add('gone'), 900);
+    setTimeout(() => door.classList.add('gone'), 800);
   }
 });}
 ready();
