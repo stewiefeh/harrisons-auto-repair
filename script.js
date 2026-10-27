@@ -5,31 +5,10 @@ function ready(){ requestAnimationFrame(() => {
   document.body.classList.add('ready');
   if (door && !prefersReduced){
     door.classList.add('open');
-    setTimeout(() => door.classList.add('gone'), 1300);
+    setTimeout(() => door.classList.add('gone'), 900);
   }
 });}
-if (door && !prefersReduced){
-  // let the door paint first, then open
-  setTimeout(ready, 250);
-} else { ready(); if (door) door.classList.add('gone'); }
-
-// Scroll reveals: everything already in view shows immediately,
-// so a full-page render or a fast scroll never strands content.
-const revealEls = [...document.querySelectorAll('[data-reveal]')];
-if ('IntersectionObserver' in window && !prefersReduced){
-  const io = new IntersectionObserver((entries) => {
-    for (const e of entries){
-      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
-    }
-  }, {threshold: .08});
-  for (const el of revealEls){
-    const r = el.getBoundingClientRect();
-    if (r.top < innerHeight && r.bottom > 0){ el.classList.add('in'); }
-    else { el.classList.add('pre'); io.observe(el); }
-  }
-  // safety net: reveal anything still pending after 4s
-  setTimeout(() => revealEls.forEach(el => el.classList.add('in')), 4000);
-}
+ready();
 
 // Live open/closed status, Mountain Time
 (function(){
