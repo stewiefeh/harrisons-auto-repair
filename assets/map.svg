@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Sketch map of 136 W Malvern Ave, Salt Lake City">
+  <defs>
+    <style>
+      .rd{fill:none;stroke:#D9D2C2;stroke-linecap:round}
+      .lbl{font-family:Archivo,Arial,sans-serif;font-weight:600;fill:#8A8272;letter-spacing:.28em}
+      .bl{fill:#E3DCCB}
+    </style>
+  </defs>
+  <rect width="800" height="600" fill="#EDE7D9"/>
+  <g stroke="#E2DACA" stroke-width="1">
+    <path d="M0 75H800M0 150H800M0 225H800M0 375H800M0 450H800M0 525H800"/>
+    <path d="M100 0V600M200 0V600M300 0V600M500 0V600M600 0V600M700 0V600"/>
+  </g>
+  <rect class="bl" x="330" y="200" width="140" height="92" rx="6"/>
+  <rect class="bl" x="330" y="328" width="140" height="80" rx="6"/>
+  <rect class="bl" x="120" y="180" width="160" height="240" rx="6"/>
+  <rect class="bl" x="520" y="200" width="150" height="208" rx="6"/>
+  <path class="rd" stroke-width="30" d="M-10 316H810"/>
+  <path d="M-10 316H810" fill="none" stroke="#A63341" stroke-opacity=".12" stroke-width="30" stroke-dasharray="0 0"/>
+  <path d="M-10 316H810" fill="none" stroke="#B7AF9D" stroke-width="2" stroke-dasharray="14 12"/>
+  <path class="rd" stroke-width="16" d="M120 60V560"/>
+  <path class="rd" stroke-width="16" d="M640 40V560"/>
+  <path class="rd" stroke-width="12" d="M250 40V580"/>
+  <path class="rd" stroke-width="12" d="M470 20V570"/>
+  <text class="lbl" x="410" y="300" font-size="15" text-anchor="middle">W MALVERN AVE</text>
+  <g>
+    <ellipse cx="400" cy="212" rx="64" ry="40" fill="#A63341"/>
+    <path d="M376 244 L400 274 L424 244 Z" fill="#A63341"/>
+    <ellipse cx="400" cy="212" rx="58" ry="35" fill="none" stroke="#F1EDE3" stroke-width="2.5" stroke-dasharray="3 6"/>
+    <text x="400" y="221" font-family="'Big Shoulders Display',Archivo,Arial,sans-serif" font-weight="700" font-size="30" fill="#F1EDE3" text-anchor="middle">H</text>
+  </g>
+  <g>
+    <rect x="368" y="252" width="64" height="20" rx="4" fill="#F1EDE3" stroke="#221E1E" stroke-width="1.5"/>
+    <text x="400" y="266" font-family="Archivo,Arial,sans-serif" font-weight="700" font-size="12" fill="#221E1E" text-anchor="middle" letter-spacing="1">136</text>
+  </g>
+  <text class="lbl" x="40" y="52" font-size="13">SALT LAKE CITY</text>
+  <text class="lbl" x="40" y="74" font-size="10" opacity=".7">UTAH</text>
+</svg>
