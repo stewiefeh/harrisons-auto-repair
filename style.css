@@ -74,31 +74,13 @@ html{scroll-behavior:smooth}
   text-decoration:none;padding:.5em .15em;transition:color .25s}
 .nav a:hover,.nav a:focus-visible{color:var(--red)}
 .nav a[aria-current="true"]{color:var(--red)}
-/* Reviews: double rule draws in, receipt style */
-.nav a.rv::after{content:"";position:absolute;left:.1em;right:.1em;bottom:1px;height:2px;background:var(--red);
-  transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.65,0,.35,1)}
-.nav a.rv::before{content:"";position:absolute;left:.1em;right:.1em;bottom:7px;height:1px;background:var(--red);opacity:.55;
-  transform:scaleX(0);transform-origin:right;transition:transform .3s .05s cubic-bezier(.65,0,.35,1)}
-.nav a.rv:hover::after,.nav a.rv:focus-visible::after,
-.nav a.rv:hover::before,.nav a.rv:focus-visible::before{transform:scaleX(1)}
-/* Services: jack lifts the label */
-.nav a.sv{transition:color .25s,transform .32s cubic-bezier(.34,1.56,.64,1)}
-.nav a.sv::after{content:"";position:absolute;left:12%;right:12%;bottom:2px;height:4px;border-radius:2px;background:var(--red);
+/* every nav link: same motion as Services, the jack lifts the label */
+.nav a{transition:color .25s,transform .32s cubic-bezier(.34,1.56,.64,1)}
+.nav a::after{content:"";position:absolute;left:12%;right:12%;bottom:2px;height:4px;border-radius:2px;background:var(--red);
   transform:translateY(7px) scaleX(.35);opacity:0;transition:.32s cubic-bezier(.34,1.56,.64,1)}
-.nav a.sv:hover,.nav a.sv:focus-visible{transform:translateY(-3px)}
-.nav a.sv:hover::after,.nav a.sv:focus-visible::after{transform:translateY(0) scaleX(1);opacity:1}
-/* Work: spray pass wipes red behind the label */
-.nav a.wk{z-index:0;transition:color .25s .04s}
-.nav a.wk::after{content:"";position:absolute;inset:0;background:var(--red);z-index:-1;
-  transform:scaleX(0);transform-origin:left;transition:transform .32s cubic-bezier(.7,0,.2,1)}
-.nav a.wk:hover,.nav a.wk:focus-visible{color:var(--paper)}
-.nav a.wk:hover::after,.nav a.wk:focus-visible::after{transform:scaleX(1)}
-/* Visit: pulls forward, road line behind it */
-.nav a.vs{transition:color .25s,padding-left .32s cubic-bezier(.7,0,.2,1)}
-.nav a.vs::after{content:"";position:absolute;left:0;top:50%;width:0;height:3px;background:var(--red);
-  transform:translateY(-50%);transition:width .32s cubic-bezier(.7,0,.2,1)}
-.nav a.vs:hover,.nav a.vs:focus-visible{padding-left:.8em}
-.nav a.vs:hover::after,.nav a.vs:focus-visible::after{width:.5em}
+.nav a:hover,.nav a:focus-visible{transform:translateY(-3px)}
+.nav a:hover::after,.nav a:focus-visible::after{transform:translateY(0) scaleX(1);opacity:1}
+
 @media (max-width:980px){.nav{gap:14px}.nav a{font-size:.92rem}}
 @media (max-width:760px){
   .top .wrap{flex-wrap:wrap;row-gap:0}
@@ -109,8 +91,7 @@ html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .nav a,.nav a::after,.nav a::before{transition:none}
-  .nav a.sv:hover{transform:none}
-  .nav a.vs:hover{padding-left:.15em}
+  .nav a:hover{transform:none}
 }
 
 /* ---------- hero ---------- */
