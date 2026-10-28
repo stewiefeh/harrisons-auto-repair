@@ -51,3 +51,15 @@ ready();
   }, {rootMargin: '-35% 0px -55% 0px'});
   byId.forEach((link, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
 })();
+/* directions button: Apple Maps on iPhone/iPad, Google Maps everywhere else */
+(function(){
+  const link = document.getElementById('dir-link');
+  if (!link) return;
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if (isIOS){
+    link.href = "https://maps.apple.com/?daddr=40.7136048,-111.8953867&dirflg=d&q=Harrisons+Mobile+Auto+Repair";
+  } else {
+    link.href = "https://www.google.com/maps/dir/?api=1&destination=40.7136048%2C-111.8953867&destination_place_id=ChIJqwHmft2KUocRWeDcq5kcBsI";
+  }
+})();
