@@ -62,7 +62,7 @@ a{color:inherit}
 }
 .call-btn:hover{background:var(--red-deep);transform:translateY(-1px)}
 .call-btn svg{width:1em;height:1em}
-@media (max-width:640px){.top .status span.label{display:none}}
+@media (max-width:640px){.top .status{font-size:.74rem;gap:6px}.top .call-btn{padding:.5em 1em;font-size:1rem}}
 
 
 /* ---------- section nav ---------- */
