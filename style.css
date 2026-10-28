@@ -62,7 +62,7 @@ a{color:inherit}
 }
 .call-btn:hover{background:var(--red-deep);transform:translateY(-1px)}
 .call-btn svg{width:1em;height:1em}
-@media (max-width:640px){.top .status{font-size:.74rem;gap:6px}.top .call-btn{padding:.5em 1em;font-size:1rem}}
+@media (max-width:640px){.top .call-btn{padding:.5em 1em;font-size:1rem}}
 
 
 /* ---------- section nav ---------- */
@@ -84,9 +84,11 @@ html{scroll-behavior:smooth}
 @media (max-width:980px){.nav{gap:14px}.nav a{font-size:.92rem}}
 @media (max-width:760px){
   .top .wrap{flex-wrap:wrap;row-gap:0}
+  .top .logo{height:48px}
+  .top .status{order:3;width:100%;justify-content:center;font-size:.82rem;letter-spacing:.06em;padding-block:8px}
   .nav{order:5;width:100%;margin-left:0;gap:0;justify-content:space-between;border-top:1px solid rgba(35,32,34,.08)}
   .nav a{padding:.55em 0}
-  #reviews,#services,#work,#visit{scroll-margin-top:118px}
+  #reviews,#services,#work,#visit{scroll-margin-top:152px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
